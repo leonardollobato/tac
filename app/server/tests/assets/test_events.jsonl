@@ -1,0 +1,6 @@
+{"event": "login", "user": {"id": 1, "name": "John Doe"}, "timestamp": "2025-01-01T10:00:00Z"}
+{"event": "page_view", "user": {"id": 1, "name": "John Doe", "email": "john@example.com"}, "timestamp": "2025-01-01T10:05:00Z", "metadata": {"page": "/home"}}
+{"event": "click", "user": {"id": 2, "name": "Jane Smith"}, "timestamp": "2025-01-01T10:10:00Z", "metadata": {"button": "submit"}}
+{"event": "logout", "user": {"id": 1, "name": "John Doe", "email": "john@example.com"}, "timestamp": "2025-01-01T10:15:00Z"}
+{"event": "login", "user": {"id": 3, "name": "Bob Johnson"}, "timestamp": "2025-01-01T10:20:00Z", "metadata": {"device": "mobile"}}
+{"event": "purchase", "user": {"id": 2, "name": "Jane Smith", "email": "jane@example.com"}, "timestamp": "2025-01-01T10:25:00Z", "metadata": {"amount": 99.99, "currency": "USD"}}
