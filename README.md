@@ -5,7 +5,7 @@ A web application that converts natural language queries to SQL using AI, built 
 ## Features
 
 - 🗣️ Natural language to SQL conversion using OpenAI or Anthropic
-- 📁 Drag-and-drop file upload (.csv and .json)
+- 📁 Drag-and-drop file upload (.csv, .json, and .jsonl)
 - 📊 Interactive table results display
 - 🔒 SQL injection protection
 - ⚡ Fast development with Vite and uv
@@ -83,12 +83,32 @@ npm run dev
 
 1. **Upload Data**: Click "Upload Data" to open the modal
    - Use sample data buttons for quick testing
-   - Or drag and drop your own .csv or .json files
+   - Or drag and drop your own .csv, .json, or .jsonl files
    - Uploading a file with the same name will overwrite the existing table
 2. **Query Your Data**: Type a natural language query like "Show me all users who signed up last week"
    - Press `Cmd+Enter` (Mac) or `Ctrl+Enter` (Windows/Linux) to run the query
 3. **View Results**: See the generated SQL and results in a table format
 4. **Manage Tables**: Click the × button on any table to remove it
+
+### JSONL File Support
+
+The application supports JSONL (JSON Lines) files where each line contains a separate JSON object. JSONL files are automatically processed with the following features:
+
+- **Nested Object Flattening**: Objects nested within your JSON are flattened using `__` as a delimiter
+  - Example: `{"user": {"name": "John"}}` becomes a column `user__name`
+
+- **Array Flattening**: Arrays are flattened with numeric indices using `_` as a delimiter
+  - Example: `{"tags": ["a", "b", "c"]}` becomes columns `tags_0`, `tags_1`, `tags_2`
+
+- **Field Discovery**: All fields across all records are discovered, ensuring every field becomes a column even if not present in every record
+
+- **Example JSONL**:
+  ```jsonl
+  {"event": "login", "user": {"id": 1, "name": "John"}, "tags": ["web", "desktop"]}
+  {"event": "logout", "user": {"id": 1, "name": "John", "email": "john@example.com"}}
+  ```
+
+  Creates columns: `event`, `user__id`, `user__name`, `user__email`, `tags_0`, `tags_1`
 
 ## Development
 
@@ -135,7 +155,7 @@ npm run preview            # Preview production build
 
 ## API Endpoints
 
-- `POST /api/upload` - Upload CSV/JSON file
+- `POST /api/upload` - Upload CSV/JSON/JSONL file
 - `POST /api/query` - Process natural language query
 - `GET /api/schema` - Get database schema
 - `POST /api/insights` - Generate column insights
@@ -192,7 +212,7 @@ uv run pytest tests/test_sql_injection.py -v
 ### Additional Security Features
 
 - CORS configured for local development only
-- File upload validation (CSV and JSON only)
+- File upload validation (CSV, JSON, and JSONL only)
 - Comprehensive error logging without exposing sensitive data
 - Database operations are isolated with proper connection handling
 

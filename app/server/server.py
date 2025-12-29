@@ -37,7 +37,7 @@ from core.data_models import (
 )
 
 # Import core modules (to be implemented)
-from core.file_processor import convert_csv_to_sqlite, convert_json_to_sqlite
+from core.file_processor import convert_csv_to_sqlite, convert_json_to_sqlite, convert_jsonl_to_sqlite
 from core.llm_processor import generate_sql
 from core.sql_processor import execute_sql_safely, get_database_schema
 from core.insights import generate_insights
@@ -71,21 +71,23 @@ os.makedirs("db", exist_ok=True)
 
 @app.post("/api/upload", response_model=FileUploadResponse)
 async def upload_file(file: UploadFile = File(...)) -> FileUploadResponse:
-    """Upload and convert .json or .csv file to SQLite table"""
+    """Upload and convert .json, .jsonl, or .csv file to SQLite table"""
     try:
         # Validate file type
-        if not file.filename.endswith(('.csv', '.json')):
-            raise HTTPException(400, "Only .csv and .json files are supported")
-        
+        if not file.filename.endswith(('.csv', '.json', '.jsonl')):
+            raise HTTPException(400, "Only .csv, .json, and .jsonl files are supported")
+
         # Generate table name from filename
         table_name = file.filename.rsplit('.', 1)[0].lower().replace(' ', '_')
-        
+
         # Read file content
         content = await file.read()
-        
+
         # Convert to SQLite based on file type
         if file.filename.endswith('.csv'):
             result = convert_csv_to_sqlite(content, table_name)
+        elif file.filename.endswith('.jsonl'):
+            result = convert_jsonl_to_sqlite(content, table_name)
         else:
             result = convert_json_to_sqlite(content, table_name)
         

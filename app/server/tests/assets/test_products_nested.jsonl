@@ -1,0 +1,5 @@
+{"id": 1, "name": "Laptop", "tags": ["electronics", "computers", "portable"], "price": 999.99}
+{"id": 2, "name": "Mouse", "tags": ["electronics", "accessories"], "price": 29.99}
+{"id": 3, "name": "Keyboard", "tags": ["electronics", "accessories", "mechanical", "rgb"], "price": 149.99}
+{"id": 4, "name": "Monitor", "tags": ["electronics", "display"], "price": 399.99}
+{"id": 5, "name": "Headphones", "tags": ["electronics", "audio", "wireless"], "price": 199.99}
