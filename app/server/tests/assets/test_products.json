@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 999.99,
+    "category": "Electronics",
+    "in_stock": true
+  },
+  {
+    "id": 2,
+    "name": "Programming Book",
+    "price": 29.99,
+    "category": "Books",
+    "in_stock": true
+  },
+  {
+    "id": 3,
+    "name": "Coffee Mug",
+    "price": 12.50,
+    "category": "Kitchen",
+    "in_stock": false
+  }
+]

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natural Language SQL Interface</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1>Natural Language SQL Interface</h1>
+        
+        <!-- Query Input Section -->
+        <section id="query-section" class="query-section">
+          <textarea 
+            id="query-input" 
+            placeholder="Ask a question about your data... (e.g., 'Show me users who signed up last week')"
+            rows="4"
+            autofocus
+          ></textarea>
+          <div class="query-controls">
+            <button id="query-button" class="primary-button">Query</button>
+            <button id="upload-data-button" class="secondary-button">Upload Data</button>
+          </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results-section" class="results-section" style="display: none;">
+          <div class="results-header">
+            <h2>Query Results</h2>
+            <button id="toggle-results" class="toggle-button">Hide</button>
+          </div>
+          <div id="sql-display" class="sql-display"></div>
+          <div id="results-container" class="results-container"></div>
+        </section>
+
+        <!-- Current Tables Section -->
+        <section id="tables-section" class="tables-section">
+          <h3>Available Tables</h3>
+          <div id="tables-list" class="tables-list">
+            <p class="no-tables">No tables loaded. Upload data or use sample data to get started.</p>
+          </div>
+        </section>
+
+        <!-- Upload Modal -->
+        <div id="upload-modal" class="modal" style="display: none;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2>Upload Data</h2>
+              <button class="close-modal">&times;</button>
+            </div>
+            
+            <div class="modal-body">
+              <!-- Sample Data Section -->
+              <div class="sample-data-section">
+                <h3>Quick Start with Sample Data</h3>
+                <div class="sample-buttons">
+                  <button class="sample-button" data-sample="users">
+                    <span class="sample-icon">👥</span>
+                    <span class="sample-text">
+                      <strong>Users Data</strong>
+                      <small>20 users with signup dates</small>
+                    </span>
+                  </button>
+                  <button class="sample-button" data-sample="products">
+                    <span class="sample-icon">📦</span>
+                    <span class="sample-text">
+                      <strong>Product Inventory</strong>
+                      <small>32 products with prices</small>
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="divider">or</div>
+
+              <!-- File Upload Section -->
+              <div id="drop-zone" class="drop-zone">
+                <p>Drag and drop .csv or .json files here</p>
+                <input type="file" id="file-input" accept=".csv,.json" style="display: none;">
+                <button id="browse-button" class="secondary-button">Browse Files</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

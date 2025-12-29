@@ -1,0 +1,33 @@
+order_id,customer_name,product_category,order_amount,shipping_method,order_date,delivery_status
+1,Alex Thompson,Electronics,299.99,Express,2024-01-15,Delivered
+2,Maria Rodriguez,Clothing,89.50,Standard,2024-01-18,Pending
+3,David Chen,Home & Garden,156.75,Premium,2024-01-22,In Transit
+4,Sarah Williams,Books,34.99,Standard,2024-01-25,Delivered
+5,Michael Johnson,Sports,199.99,Express,2024-01-28,Delivered
+6,Emily Davis,Electronics,449.99,Premium,2024-02-01,In Transit
+7,Robert Brown,Clothing,67.25,Standard,2024-02-05,Pending
+8,Jennifer Lee,Home & Garden,234.50,Express,2024-02-08,Delivered
+9,Christopher Wilson,Books,28.99,Standard,2024-02-12,Delivered
+10,Amanda Garcia,Sports,145.75,Premium,2024-02-15,In Transit
+11,James Martinez,Electronics,599.99,Express,2024-02-18,Delivered
+12,Michelle Anderson,Clothing,123.45,Standard,2024-02-22,Pending
+13,Daniel Taylor,Home & Garden,189.99,Premium,2024-02-25,In Transit
+14,Jessica Moore,Books,42.50,Standard,2024-02-28,Delivered
+15,Matthew Jackson,Sports,267.99,Express,2024-03-03,Delivered
+16,Ashley Martin,Electronics,399.99,Premium,2024-03-07,In Transit
+17,Andrew Thompson,Clothing,95.75,Standard,2024-03-10,Pending
+18,Nicole White,Home & Garden,312.25,Express,2024-03-14,Delivered
+19,Kevin Harris,Books,19.99,Standard,2024-03-17,Delivered
+20,Rachel Clark,Sports,178.50,Premium,2024-03-20,In Transit
+21,Steven Lewis,Electronics,799.99,Express,2024-03-24,Delivered
+22,Stephanie Walker,Clothing,156.99,Standard,2024-03-27,Pending
+23,Brian Hall,Home & Garden,445.75,Premium,2024-03-30,In Transit
+24,Amber Young,Books,67.25,Standard,2024-04-02,Delivered
+25,Timothy Allen,Sports,334.99,Express,2024-04-05,Delivered
+26,Danielle King,Electronics,549.99,Premium,2024-04-08,In Transit
+27,Joseph Wright,Clothing,78.50,Standard,2024-04-12,Pending
+28,Melissa Lopez,Home & Garden,223.99,Express,2024-04-15,Delivered
+29,Anthony Scott,Books,31.75,Standard,2024-04-18,Delivered
+30,Heather Green,Sports,212.25,Premium,2024-04-22,In Transit
+31,Ryan Baker,Electronics,899.99,Express,2024-04-25,Delivered
+32,Lauren Adams,Clothing,134.99,Standard,2024-04-28,Pending

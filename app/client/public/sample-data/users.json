@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "signup_date": "2025-10-15",
+    "age": 28,
+    "city": "New York"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "signup_date": "2025-10-20",
+    "age": 32,
+    "city": "Los Angeles"
+  },
+  {
+    "id": 3,
+    "name": "Bob Johnson",
+    "email": "bob@example.com",
+    "signup_date": "2025-11-01",
+    "age": 45,
+    "city": "Chicago"
+  },
+  {
+    "id": 4,
+    "name": "Alice Brown",
+    "email": "alice@example.com",
+    "signup_date": "2025-11-10",
+    "age": 27,
+    "city": "Houston"
+  },
+  {
+    "id": 5,
+    "name": "Charlie Wilson",
+    "email": "charlie@example.com",
+    "signup_date": "2025-11-15",
+    "age": 35,
+    "city": "Phoenix"
+  },
+  {
+    "id": 6,
+    "name": "Diana Martinez",
+    "email": "diana@example.com",
+    "signup_date": "2025-11-20",
+    "age": 29,
+    "city": "Philadelphia"
+  },
+  {
+    "id": 7,
+    "name": "Ethan Davis",
+    "email": "ethan@example.com",
+    "signup_date": "2025-11-25",
+    "age": 38,
+    "city": "San Antonio"
+  },
+  {
+    "id": 8,
+    "name": "Fiona Garcia",
+    "email": "fiona@example.com",
+    "signup_date": "2025-12-01",
+    "age": 41,
+    "city": "San Diego"
+  },
+  {
+    "id": 9,
+    "name": "George Rodriguez",
+    "email": "george@example.com",
+    "signup_date": "2025-12-05",
+    "age": 33,
+    "city": "Dallas"
+  },
+  {
+    "id": 10,
+    "name": "Hannah Lee",
+    "email": "hannah@example.com",
+    "signup_date": "2025-12-10",
+    "age": 26,
+    "city": "San Jose"
+  },
+  {
+    "id": 11,
+    "name": "Isaac Walker",
+    "email": "isaac@example.com",
+    "signup_date": "2025-12-15",
+    "age": 42,
+    "city": "Austin"
+  },
+  {
+    "id": 12,
+    "name": "Julia White",
+    "email": "julia@example.com",
+    "signup_date": "2025-12-20",
+    "age": 31,
+    "city": "Jacksonville"
+  },
+  {
+    "id": 13,
+    "name": "Kevin Thompson",
+    "email": "kevin@example.com",
+    "signup_date": "2025-12-25",
+    "age": 37,
+    "city": "Fort Worth"
+  },
+  {
+    "id": 14,
+    "name": "Laura Anderson",
+    "email": "laura@example.com",
+    "signup_date": "2026-01-01",
+    "age": 30,
+    "city": "Columbus"
+  },
+  {
+    "id": 15,
+    "name": "Michael Chen",
+    "email": "michael@example.com",
+    "signup_date": "2026-01-05",
+    "age": 34,
+    "city": "Charlotte"
+  },
+  {
+    "id": 16,
+    "name": "Nina Patel",
+    "email": "nina@example.com",
+    "signup_date": "2026-01-10",
+    "age": 28,
+    "city": "San Francisco"
+  },
+  {
+    "id": 17,
+    "name": "Oliver Kim",
+    "email": "oliver@example.com",
+    "signup_date": "2026-01-15",
+    "age": 36,
+    "city": "Indianapolis"
+  },
+  {
+    "id": 18,
+    "name": "Patricia Lopez",
+    "email": "patricia@example.com",
+    "signup_date": "2026-01-20",
+    "age": 39,
+    "city": "Seattle"
+  },
+  {
+    "id": 19,
+    "name": "Quinn Turner",
+    "email": "quinn@example.com",
+    "signup_date": "2026-01-25",
+    "age": 25,
+    "city": "Denver"
+  },
+  {
+    "id": 20,
+    "name": "Rachel Green",
+    "email": "rachel@example.com",
+    "signup_date": "2026-02-01",
+    "age": 32,
+    "city": "Washington"
+  }
+]

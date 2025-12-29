@@ -1,0 +1,33 @@
+product_id,product_name,category,price,stock_quantity,last_restocked
+1,Laptop Pro 15,Electronics,1299.99,45,2025-10-10
+2,Wireless Mouse,Electronics,29.99,120,2025-10-15
+3,Office Chair,Furniture,249.99,30,2025-10-20
+4,Standing Desk,Furniture,599.99,15,2025-11-01
+5,USB-C Hub,Electronics,49.99,80,2025-11-05
+6,Monitor 27",Electronics,399.99,25,2025-11-10
+7,Desk Lamp,Furniture,79.99,60,2025-11-15
+8,Keyboard Mechanical,Electronics,129.99,55,2025-11-20
+9,Webcam HD,Electronics,79.99,40,2025-11-25
+10,Laptop Stand,Electronics,39.99,75,2025-12-01
+11,Ergonomic Mouse Pad,Electronics,19.99,100,2025-12-05
+12,Conference Speaker,Electronics,149.99,35,2025-12-10
+13,Bookshelf Modular,Furniture,199.99,20,2025-12-15
+14,Filing Cabinet,Furniture,179.99,25,2025-12-20
+15,HDMI Cable 6ft,Electronics,12.99,200,2025-12-25
+16,Surge Protector,Electronics,34.99,90,2026-01-01
+17,Office Desk Mat,Furniture,24.99,65,2026-01-05
+18,Monitor Arm,Electronics,89.99,30,2026-01-10
+19,External SSD 1TB,Electronics,99.99,50,2026-01-15
+20,Noise Cancelling Headphones,Electronics,249.99,40,2026-01-20
+21,Desk Organizer,Furniture,29.99,85,2026-01-25
+22,Wireless Charger,Electronics,39.99,70,2026-02-01
+23,Cable Management Box,Electronics,19.99,110,2026-02-05
+24,Executive Chair,Furniture,799.99,10,2026-02-10
+25,Laptop Backpack,Electronics,59.99,45,2026-02-15
+26,Blue Light Glasses,Electronics,29.99,95,2026-02-20
+27,Document Scanner,Electronics,199.99,20,2026-02-25
+28,Whiteboard Magnetic,Furniture,89.99,35,2026-03-01
+29,USB Flash Drive 64GB,Electronics,14.99,150,2026-03-05
+30,Adjustable Footrest,Furniture,49.99,55,2026-03-10
+31,Wireless Presenter,Electronics,39.99,60,2026-03-15
+32,Privacy Screen Filter,Electronics,44.99,40,2026-03-20
