@@ -142,6 +142,8 @@ def check_claude_code() -> CheckResult:
                 success=False,
                 error=f"Claude Code CLI not functional at '{claude_path}'",
             )
+        else:
+            print("Claude code functional")
     except FileNotFoundError:
         return CheckResult(
             success=False,
